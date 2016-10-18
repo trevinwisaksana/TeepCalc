@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD525CB71DB5D8260079B235 /* TotalBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD525CB61DB5D8260079B235 /* TotalBill.swift */; };
+		DDA0E4B51DAEAF38005136A3 /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA0E4B41DAEAF38005136A3 /* BillViewController.swift */; };
+		DDA0E4B71DAEAFB5005136A3 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA0E4B61DAEAFB5005136A3 /* TipViewController.swift */; };
+		DDA0E4BB1DAEB0DE005136A3 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA0E4BA1DAEB0DE005136A3 /* TotalViewController.swift */; };
+		DDC1C8B21DA8180A00F6C5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC1C8B11DA8180A00F6C5D4 /* AppDelegate.swift */; };
+		DDC1C8B71DA8180A00F6C5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC1C8B51DA8180A00F6C5D4 /* Main.storyboard */; };
+		DDC1C8BA1DA8180A00F6C5D4 /* TeepCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDC1C8B81DA8180A00F6C5D4 /* TeepCalc.xcdatamodeld */; };
+		DDC1C8BC1DA8180A00F6C5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC1C8BB1DA8180A00F6C5D4 /* Assets.xcassets */; };
+		DDC1C8BF1DA8180A00F6C5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC1C8BD1DA8180A00F6C5D4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD525CB61DB5D8260079B235 /* TotalBill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalBill.swift; sourceTree = "<group>"; };
+		DDA0E4B41DAEAF38005136A3 /* BillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
+		DDA0E4B61DAEAFB5005136A3 /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		DDA0E4BA1DAEB0DE005136A3 /* TotalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
+		DDC1C8AE1DA8180A00F6C5D4 /* TeepCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeepCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC1C8B11DA8180A00F6C5D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDC1C8B61DA8180A00F6C5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDC1C8B91DA8180A00F6C5D4 /* TeepCalc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeepCalc.xcdatamodel; sourceTree = "<group>"; };
+		DDC1C8BB1DA8180A00F6C5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDC1C8BE1DA8180A00F6C5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDC1C8C01DA8180A00F6C5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDC1C8AB1DA8180A00F6C5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDA0E4BC1DAEB0E9005136A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDA0E4B41DAEAF38005136A3 /* BillViewController.swift */,
+				DDA0E4B61DAEAFB5005136A3 /* TipViewController.swift */,
+				DDA0E4BA1DAEB0DE005136A3 /* TotalViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DDC1C8A51DA8180A00F6C5D4 = {
+			isa = PBXGroup;
+			children = (
+				DDC1C8B01DA8180A00F6C5D4 /* TeepCalc */,
+				DDC1C8AF1DA8180A00F6C5D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDC1C8AF1DA8180A00F6C5D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDC1C8AE1DA8180A00F6C5D4 /* TeepCalc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDC1C8B01DA8180A00F6C5D4 /* TeepCalc */ = {
+			isa = PBXGroup;
+			children = (
+				DD525CB61DB5D8260079B235 /* TotalBill.swift */,
+				DDC1C8B11DA8180A00F6C5D4 /* AppDelegate.swift */,
+				DDA0E4BC1DAEB0E9005136A3 /* ViewControllers */,
+				DDC1C8B51DA8180A00F6C5D4 /* Main.storyboard */,
+				DDC1C8BB1DA8180A00F6C5D4 /* Assets.xcassets */,
+				DDC1C8BD1DA8180A00F6C5D4 /* LaunchScreen.storyboard */,
+				DDC1C8C01DA8180A00F6C5D4 /* Info.plist */,
+				DDC1C8B81DA8180A00F6C5D4 /* TeepCalc.xcdatamodeld */,
+			);
+			path = TeepCalc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDC1C8AD1DA8180A00F6C5D4 /* TeepCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC1C8C31DA8180A00F6C5D4 /* Build configuration list for PBXNativeTarget "TeepCalc" */;
+			buildPhases = (
+				DDC1C8AA1DA8180A00F6C5D4 /* Sources */,
+				DDC1C8AB1DA8180A00F6C5D4 /* Frameworks */,
+				DDC1C8AC1DA8180A00F6C5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeepCalc;
+			productName = TeepCalc;
+			productReference = DDC1C8AE1DA8180A00F6C5D4 /* TeepCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDC1C8A61DA8180A00F6C5D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Trevin Wisaksana";
+				TargetAttributes = {
+					DDC1C8AD1DA8180A00F6C5D4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9ME882KZTA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DDC1C8A91DA8180A00F6C5D4 /* Build configuration list for PBXProject "TeepCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDC1C8A51DA8180A00F6C5D4;
+			productRefGroup = DDC1C8AF1DA8180A00F6C5D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDC1C8AD1DA8180A00F6C5D4 /* TeepCalc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDC1C8AC1DA8180A00F6C5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC1C8BF1DA8180A00F6C5D4 /* LaunchScreen.storyboard in Resources */,
+				DDC1C8BC1DA8180A00F6C5D4 /* Assets.xcassets in Resources */,
+				DDC1C8B71DA8180A00F6C5D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDC1C8AA1DA8180A00F6C5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC1C8BA1DA8180A00F6C5D4 /* TeepCalc.xcdatamodeld in Sources */,
+				DDA0E4B51DAEAF38005136A3 /* BillViewController.swift in Sources */,
+				DDA0E4B71DAEAFB5005136A3 /* TipViewController.swift in Sources */,
+				DDA0E4BB1DAEB0DE005136A3 /* TotalViewController.swift in Sources */,
+				DDC1C8B21DA8180A00F6C5D4 /* AppDelegate.swift in Sources */,
+				DD525CB71DB5D8260079B235 /* TotalBill.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDC1C8B51DA8180A00F6C5D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC1C8B61DA8180A00F6C5D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDC1C8BD1DA8180A00F6C5D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC1C8BE1DA8180A00F6C5D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDC1C8C11DA8180A00F6C5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDC1C8C21DA8180A00F6C5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDC1C8C41DA8180A00F6C5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = TeepCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trevinwisaksana.TeepCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DDC1C8C51DA8180A00F6C5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = TeepCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trevinwisaksana.TeepCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDC1C8A91DA8180A00F6C5D4 /* Build configuration list for PBXProject "TeepCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC1C8C11DA8180A00F6C5D4 /* Debug */,
+				DDC1C8C21DA8180A00F6C5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC1C8C31DA8180A00F6C5D4 /* Build configuration list for PBXNativeTarget "TeepCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC1C8C41DA8180A00F6C5D4 /* Debug */,
+				DDC1C8C51DA8180A00F6C5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DDC1C8B81DA8180A00F6C5D4 /* TeepCalc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DDC1C8B91DA8180A00F6C5D4 /* TeepCalc.xcdatamodel */,
+			);
+			currentVersion = DDC1C8B91DA8180A00F6C5D4 /* TeepCalc.xcdatamodel */;
+			path = TeepCalc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DDC1C8A61DA8180A00F6C5D4 /* Project object */;
+}

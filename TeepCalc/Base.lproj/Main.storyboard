@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bill View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BillViewController" customModule="TeepCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Place your bill.  " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gwf-jI-juj">
+                                <frame key="frameInset" minX="-1" minY="-1" width="377" height="668"/>
+                                <color key="backgroundColor" red="0.63671341538785464" green="0.94447082762227952" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.97197045081664524" green="1" blue="0.94619474119415803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.210690707" blue="0.63936203719999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JV-ic-AbO">
+                                <frame key="frameInset" minX="241" minY="580" width="79" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.210690707" blue="0.63936203719999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="billWasInserted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ciJ-WU-yES"/>
+                                    <segue destination="b0Z-Tw-Zjt" kind="show" identifier="billInserted" id="jvB-Fk-9tm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0JV-ic-AbO" secondAttribute="bottom" constant="30" id="1f6-dJ-Cxx"/>
+                            <constraint firstItem="Gwf-jI-juj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-1" id="2pu-qm-8qy"/>
+                            <constraint firstAttribute="trailing" secondItem="Gwf-jI-juj" secondAttribute="trailing" constant="-1" id="6C4-pq-fIg"/>
+                            <constraint firstItem="Gwf-jI-juj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-1" id="Nu3-Ee-p68"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gwf-jI-juj" secondAttribute="bottom" constant="-1" id="cYV-o7-QFk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0JV-ic-AbO" secondAttribute="trailing" constant="30" id="jht-zc-3hI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="25s-FI-hFI"/>
+                    <connections>
+                        <outlet property="billTextField" destination="Gwf-jI-juj" id="hY2-zG-MXI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--Tip View Controller-->
+        <scene sceneID="NJi-g3-8mw">
+            <objects>
+                <viewController id="b0Z-Tw-Zjt" customClass="TipViewController" customModule="TeepCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TBg-V1-ZeF"/>
+                        <viewControllerLayoutGuide type="bottom" id="5m7-9B-Uw6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7uh-6z-xEX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Place your tip.  " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZcC-Ad-bT6">
+                                <color key="backgroundColor" red="0.75404549556901135" green="1" blue="0.8270784684026945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.9719704508" green="1" blue="0.94619474120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.210690707" blue="0.63936203719999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqu-8S-J3B">
+                                <frame key="frameInset" minX="256" minY="583" width="79" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.210690707" blue="0.63936203719999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateTotal:" destination="b0Z-Tw-Zjt" eventType="touchUpInside" id="rwx-im-liq"/>
+                                    <segue destination="CWd-Ec-WE5" kind="show" identifier="tipInserted" id="8cv-nr-tPe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZcC-Ad-bT6" firstAttribute="top" secondItem="7uh-6z-xEX" secondAttribute="top" id="Chh-QM-GFz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZcC-Ad-bT6" secondAttribute="trailing" constant="-20" id="FOy-qj-qKE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fqu-8S-J3B" secondAttribute="trailing" constant="30" id="JL0-An-8d0"/>
+                            <constraint firstItem="ZcC-Ad-bT6" firstAttribute="leading" secondItem="7uh-6z-xEX" secondAttribute="leading" id="Kdk-Ub-4ro"/>
+                            <constraint firstItem="ZcC-Ad-bT6" firstAttribute="bottom" secondItem="5m7-9B-Uw6" secondAttribute="top" id="WZ0-eS-Nba"/>
+                            <constraint firstItem="5m7-9B-Uw6" firstAttribute="top" secondItem="Fqu-8S-J3B" secondAttribute="bottom" constant="30" id="rSp-oR-SK3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tipTextField" destination="ZcC-Ad-bT6" id="p20-5Q-e5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOE-9a-ea6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960.8" y="136.28185907046478"/>
+        </scene>
+        <!--Total View Controller-->
+        <scene sceneID="6SC-MH-dfI">
+            <objects>
+                <viewController id="CWd-Ec-WE5" customClass="TotalViewController" customModule="TeepCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dlu-cR-yck"/>
+                        <viewControllerLayoutGuide type="bottom" id="KeH-6S-sHn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J9r-Jv-1R7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iZm-Ss-Hdl">
+                                <color key="backgroundColor" red="1" green="0.89612867580612787" blue="0.93050078410830217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" indicatorStyle="white" text="You need to pay" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QUr-Cs-51T">
+                                <frame key="frameInset" minX="67" minY="153" width="242" height="125"/>
+                                <color key="backgroundColor" red="0.99857801198959351" green="0.89948433637619019" blue="0.9304543137550354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.4549019608" green="0.4549019608" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="44"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAI-6s-PrA">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="totalAmountField:" destination="CWd-Ec-WE5" eventType="valueChanged" id="hFy-Sf-vRJ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cAI-6s-PrA" firstAttribute="top" secondItem="dlu-cR-yck" secondAttribute="bottom" constant="266" id="0g5-UQ-AhX"/>
+                            <constraint firstItem="iZm-Ss-Hdl" firstAttribute="bottom" secondItem="KeH-6S-sHn" secondAttribute="top" id="IAX-UH-9Sb"/>
+                            <constraint firstItem="iZm-Ss-Hdl" firstAttribute="centerX" secondItem="cAI-6s-PrA" secondAttribute="centerX" id="JuK-AH-eyL"/>
+                            <constraint firstItem="QUr-Cs-51T" firstAttribute="top" secondItem="dlu-cR-yck" secondAttribute="bottom" constant="133" id="Kj7-j8-ZcR"/>
+                            <constraint firstAttribute="trailing" secondItem="iZm-Ss-Hdl" secondAttribute="trailing" id="aoT-4f-zhf"/>
+                            <constraint firstItem="QUr-Cs-51T" firstAttribute="centerX" secondItem="cAI-6s-PrA" secondAttribute="centerX" id="dsS-ul-ly0"/>
+                            <constraint firstItem="KeH-6S-sHn" firstAttribute="top" secondItem="cAI-6s-PrA" secondAttribute="bottom" constant="191" id="fqv-FQ-4Ns"/>
+                            <constraint firstItem="iZm-Ss-Hdl" firstAttribute="top" secondItem="J9r-Jv-1R7" secondAttribute="top" id="kbK-4X-Q9G"/>
+                            <constraint firstItem="cAI-6s-PrA" firstAttribute="leading" secondItem="J9r-Jv-1R7" secondAttribute="leadingMargin" constant="87" id="ozJ-UB-ODM"/>
+                            <constraint firstItem="QUr-Cs-51T" firstAttribute="leading" secondItem="J9r-Jv-1R7" secondAttribute="leadingMargin" constant="51" id="pSq-gM-nUE"/>
+                            <constraint firstItem="iZm-Ss-Hdl" firstAttribute="leading" secondItem="J9r-Jv-1R7" secondAttribute="leading" id="qYX-Hd-L8I"/>
+                            <constraint firstItem="KeH-6S-sHn" firstAttribute="top" secondItem="QUr-Cs-51T" secondAttribute="bottom" constant="327" id="syg-hQ-Z1y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="totalTextField" destination="cAI-6s-PrA" id="vKV-sM-ilY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9H-PB-H9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2880.8000000000002" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>
